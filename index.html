@@ -29,18 +29,6 @@
         </linearGradient>
       </defs>
 
-      <!-- paper wrap cone -->
-      <path d="M60,175 L30,270 L120,235 L210,270 L180,175 Z" fill="url(#wrapFill)"/>
-      <path d="M60,175 L30,270 L75,240 L90,178 Z" fill="#ffffff" opacity="0.25"/>
-      <path d="M180,175 L210,270 L165,240 L150,178 Z" fill="#00000010"/>
-
-      <!-- ribbon bow -->
-      <ellipse cx="120" cy="238" rx="10" ry="9" fill="#d94f7c"/>
-      <path d="M120,238 C95,222 78,228 68,244 C82,254 104,250 120,238 Z" fill="#ea79a1"/>
-      <path d="M120,238 C145,222 162,228 172,244 C158,254 136,250 120,238 Z" fill="#ea79a1"/>
-      <path d="M112,244 L96,266 L110,262 Z" fill="#d94f7c"/>
-      <path d="M128,244 L144,266 L130,262 Z" fill="#d94f7c"/>
-
       <!-- fern greenery, tucked behind the blooms -->
       <g stroke="#6f9a63" stroke-width="2" fill="none" opacity="0.8">
         <path d="M75,150 C65,120 55,95 40,72"/>
@@ -50,12 +38,24 @@
         <path d="M120,140 C118,105 118,75 120,45"/>
       </g>
 
-      <!-- stems -->
-      <path d="M120,190 C118,215 116,245 118,268" stroke="#6f9a63" stroke-width="4" fill="none" stroke-linecap="round"/>
-      <path d="M95,185 C90,212 92,242 96,266" stroke="#6f9a63" stroke-width="4" fill="none" stroke-linecap="round"/>
-      <path d="M145,185 C150,212 148,242 144,266" stroke="#6f9a63" stroke-width="4" fill="none" stroke-linecap="round"/>
+      <!-- short stems, just enough to lead into the paper wrap below -->
+      <path d="M120,190 C119,198 118,206 118,214" stroke="#6f9a63" stroke-width="4" fill="none" stroke-linecap="round"/>
+      <path d="M95,185 C93,196 92,206 93,216" stroke="#6f9a63" stroke-width="4" fill="none" stroke-linecap="round"/>
+      <path d="M145,185 C147,196 148,206 147,216" stroke="#6f9a63" stroke-width="4" fill="none" stroke-linecap="round"/>
 
-      <!-- three stargazer-style lily blooms -->
+      <!-- paper wrap cone, sits in front of the stem bases -->
+      <path d="M60,175 L30,270 L120,235 L210,270 L180,175 Z" fill="url(#wrapFill)"/>
+      <path d="M60,175 L30,270 L75,240 L90,178 Z" fill="#ffffff" opacity="0.25"/>
+      <path d="M180,175 L210,270 L165,240 L150,178 Z" fill="#00000010"/>
+
+      <!-- ribbon bow, tied over the wrap -->
+      <ellipse cx="120" cy="238" rx="10" ry="9" fill="#d94f7c"/>
+      <path d="M120,238 C95,222 78,228 68,244 C82,254 104,250 120,238 Z" fill="#ea79a1"/>
+      <path d="M120,238 C145,222 162,228 172,244 C158,254 136,250 120,238 Z" fill="#ea79a1"/>
+      <path d="M112,244 L96,266 L110,262 Z" fill="#d94f7c"/>
+      <path d="M128,244 L144,266 L130,262 Z" fill="#d94f7c"/>
+
+      <!-- three stargazer-style lily blooms, up front -->
       <g transform="translate(72,95) rotate(-16)">
         <g id="bloom">
           <ellipse cx="0" cy="-34" rx="11" ry="36" fill="url(#petalFill)" transform="rotate(0)"/>
@@ -109,7 +109,7 @@
 <div class="petals" id="petals" aria-hidden="true"></div>
 
 <!-- the lily bouquet stays pinned on screen once she's received it -->
-<svg class="kept-lilies" id="kept-lilies" viewBox="0 0 240 260" aria-hidden="true"><use href="#lily-bouquet"></use></svg>
+<svg class="kept-lilies" id="kept-lilies" viewBox="0 0 240 280" aria-hidden="true"><use href="#lily-bouquet"></use></svg>
 
 <!-- background music: plays once while the letter is being read, then fades out -->
 <audio id="bg-music" src="music.mp3" preload="none"></audio>
